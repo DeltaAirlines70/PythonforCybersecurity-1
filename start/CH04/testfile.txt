@@ -3,4 +3,8 @@ My name is Ed
 I like rubber ducks
 We'd like to make you an offer
 How we hire at Google
+<<<<<<< HEAD
 College Stress
+=======
+College Stress
+>>>>>>> 7c9ce595174739032918a981e25c0615d9d360de
