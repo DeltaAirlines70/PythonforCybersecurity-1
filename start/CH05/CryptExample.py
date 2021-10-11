@@ -33,7 +33,7 @@ elif method == "d":
     cipher_text = input("Message to Encrypt or Decrypt")
     plain_text = decrpyt(cipher_text, encKey)
     print(plain_text)
-elif method != "c" and method != "d" and method != "e":
+else:
     print("sorry, please enter c, d or r")
 #if method != "c" and method != "d" and  method != "e":
   # d
