@@ -2,4 +2,8 @@
 # example workign with Functions
 #By 
 def printme(mystr):
-    return (mystr)
+    return  
+
+print("This is a test")
+return_value = printme("Hello World")
+print(return_value)
