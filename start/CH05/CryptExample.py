@@ -19,8 +19,8 @@ def decrpyt(cipher_text, key):
     plain_text = Fernet(key).decrypt(cipher_text)
     plain_text = plain_text.decode()
     return plain_text
-
-method = input("Please enter C, D or E")
+print("please enter c, d or e")
+method = input()
 method = method[0].lower()
 if method == "c":
     create_key()
