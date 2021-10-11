@@ -16,7 +16,7 @@ def encrypt(plain_text, key):
 def decrpyt(cipher_text, key):
     cipher_text = cipher_text.encode()
     key = key.encode()
-    plain_text = Fernet(key.decrypt(cipher_text))
+    plain_text = Fernet(key).decrypt(cipher_text)
     plain_text = plain_text.decode()
     return plain_text
 
