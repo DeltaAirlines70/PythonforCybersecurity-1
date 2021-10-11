@@ -21,6 +21,7 @@ def decrpyt(cipher_text, key):
     return plain_text
 
 method = input("Please enter C, D or E")
+method = method[0].lower()
 if method == "c":
     create_key()
 elif method == "e":
