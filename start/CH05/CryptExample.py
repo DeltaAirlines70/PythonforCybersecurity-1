@@ -6,7 +6,7 @@ def create_key():
     key = Fernet.generate_key()
     print("Key:", key.decode())
 
-def encrypt(plain_text, key_):
+def encrypt(plain_text, key):
     plain_text = plain_text.encode()
     key = key.encode()
     cipher_text = Fernet(key).encrypt(plain_text)
