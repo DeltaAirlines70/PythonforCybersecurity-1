@@ -2,6 +2,7 @@
 # Script that encrypts/decrypts text using cryptography module
 # By 
 from cryptography.fernet import Fernet
+
 def create_key():
     key = Fernet.generate_key()
     print("Key:", key.decode())
@@ -37,3 +38,4 @@ elif method != "c" and method != "d" and method != "e":
 #if method != "c" and method != "d" and  method != "e":
   # d
   #       print("Sorry please enter c, e or d")
+ 
