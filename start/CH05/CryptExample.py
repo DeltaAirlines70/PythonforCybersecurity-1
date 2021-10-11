@@ -32,5 +32,5 @@ elif method == "d":
     cipher_text = input("Message to Encrypt or Decrypt")
     plain_text = decrpyt(cipher_text, encKey)
     print(plain_text)
-else:
-    print("Sorry please enter c, e or d")
+if method != "c" and method != "d" and  method != "e":
+        print("Sorry please enter c, e or d")
