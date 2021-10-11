@@ -25,13 +25,15 @@ method = method[0].lower()
 if method == "c":
     create_key()
 elif method == "e":
-    encKey = input("Encryption Key")
+    
     plain_text = input("Message to Encrypt or Decrypt")
+    encKey = input("Encryption Key")
     cipher_text = encrypt(plain_text, encKey)
     print(cipher_text)
 elif method == "d":
-    encKey = input("Decrpytion Key")
+
     cipher_text = input("Message to Encrypt or Decrypt")
+    encKey = input("Decrpytion Key")
     plain_text = decrpyt(cipher_text, encKey)
     print(plain_text)
 else:
