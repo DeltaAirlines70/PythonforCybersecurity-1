@@ -19,11 +19,11 @@ maidename = input()
 print("What elementary school did you attend")
 elementaryschool = input()
 
-test_file.write("Your name is", name)
-test_file.write("Your favorite color is ", color)
-test_file.write("The name of the first pet I had is ", petsname)
-test_file.write("The elementary school I attened was", elementaryschool)
-test_file.write("My mother's maiden name is ", maidename)
+test_file.write("Your name is")
+test_file.write("Your favorite color is ")
+test_file.write("The name of the first pet I had is ")
+test_file.write("The elementary school I attened was")
+test_file.write("My mother's maiden name is ")
 
 
 test_file.close()
