@@ -5,10 +5,10 @@
 # How cryptography *can work* - ROT13
 test_file = open("hackme.txt", "w") 
 test_file.write("Your name is")
-test_file.write("Your favorite color is ")
-test_file.write("The name of the first pet I had is ")
+test_file.write("Your favorite color is")
+test_file.write("The name of the first pet I had is")
 test_file.write("The elementary school I attened was")
-test_file.write("My mother's maiden name is ")
+test_file.write("My mother's maiden name is")
 test_file.close()
 #print("What is your name?")
 #name = input()
