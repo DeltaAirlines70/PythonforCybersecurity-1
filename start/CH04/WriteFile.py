@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# Sample script that writes to a file
-# By 
-# Intro to cryptography
-# How cryptography *can work* - ROT13
 test_file = open("hackme.txt", "w") 
 test_file.write("Your name is")
 test_file.write("Your favorite color is34")
