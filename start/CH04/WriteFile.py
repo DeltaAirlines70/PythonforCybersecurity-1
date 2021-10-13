@@ -3,7 +3,7 @@
 # By 
 # Intro to cryptography
 # How cryptography *can work* - ROT13
-test_file = open("hackme.txt", "w") 
+
 print("What is your name?")
 name = input()
 test_file.write("Your name is", name)
@@ -19,4 +19,5 @@ test_file.write("My mother's maiden name is ", maidename)
 print("What elementary school did you attend")
 elementaryschool = input()
 test_file.write("The elementary school I attened was", elementaryschool)
+test_file = open("hackme.txt", "w") 
 test_file.close()
