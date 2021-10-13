@@ -1,0 +1,5 @@
+test_file = open("airtrafficcontroller.txt", "w")
+test_file.write("Daly City, CA")
+test_file.write("God has a plan for me")
+test_file.write("Rich people")
+test_file.close()
