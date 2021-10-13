@@ -3,7 +3,7 @@
 # By 
 # Intro to cryptography
 # How cryptography *can work* - ROT13
-test_file = open("hackme.txt", "w") 
+test_file = open("hackme1.txt", "w") 
 test_file.write("Your name is")
 test_file.write("Your favorite color is")
 test_file.write("The name of the first pet I had is")
