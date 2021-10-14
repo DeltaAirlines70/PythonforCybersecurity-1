@@ -38,6 +38,6 @@ for ip in ip_addresses:
 
     if exit_code == 0:
         write_log("{0} is online".format(ip))
-        print("{0} is online".format(ip))
+        write_log("{0} is online".format(ip))
     else:
-        print("{0} is offline".format(ip))
+        write_log("{0} is offline".format(ip))
