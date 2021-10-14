@@ -14,8 +14,8 @@ def write_log(message):
     f.close()
 
 def ping_host(ip):
-    currrent_os = platform.system
-    if currrent_os == "windows":
+    current_os = platform.system
+    if current_os == "windows":
         ping_cmd = f"ping -n 1 -w 2 {ip} > nul"
     else:
      ping_cmd = f"ping -c 1 -w 2 {ip} > /dev/nul 2>&1"
