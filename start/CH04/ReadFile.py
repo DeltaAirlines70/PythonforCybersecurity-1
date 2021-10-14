@@ -1,4 +1,5 @@
-hackme_file = open("hackme.txt", "r")
-hackme_addresses = hackme_file.read()
-print(hackme_addresses)
-hackme_file.close()
+ip_file = open("ips.txt", "r")
+for line in ip_file:
+    if line.startswith("192."):
+        print(line)
+    ip_file.close()
