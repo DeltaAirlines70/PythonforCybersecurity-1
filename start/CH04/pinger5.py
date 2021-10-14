@@ -16,9 +16,9 @@ def write_log(message):
 def ping_host(ip):
     currrent_os = platform.system.lower()
     if currrent_os == "windows":
-        ping_cmd = f"ping -n 1-w 2 {ip} > nul"
+        ping_cmd = f"ping -n 1 -w 2 {ip} > nul"
     else:
-     ping_cmd = f"ping -c 1  -w 2 {ip} > /dev/nul 2>&1"
+     ping_cmd = f"ping -c 1 -w 2 {ip} > /dev/nul 2>&1"
     exit_code = os.sytem(ping_cmd)
     return exit_code
 
