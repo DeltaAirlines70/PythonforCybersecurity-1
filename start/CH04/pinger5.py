@@ -18,8 +18,8 @@ def ping_host(ip):
     if current_os == "windows":
         ping_cmd = f"ping -n 1 -w 2 {ip} > nul"
     else:
-     ping_cmd = f"ping -c 1 -w 2 {ip} > /dev/nul 2>&1"
-    exit_code = os.sytem(ping_cmd)
+        ping_cmd = f"ping -c 1 -w 2 {ip} > /dev/null 2>&1"
+    exit_code = os.system(ping_cmd)
     return exit_code
 
 def import_addresses():
