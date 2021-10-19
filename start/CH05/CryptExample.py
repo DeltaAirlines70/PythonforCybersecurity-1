@@ -23,15 +23,15 @@ def decrpyt(cipher_text, key):
     return plain_text
 encKey = ""
 print("What would you like to do")
-method = " " + input("Create(c), Encrpyt(e) or Decrypt(d)")
-method = method[1].lower()
+method =  " " + input("Create(c), Encrpyt(e) or Decrypt(d)")
+method = method[0].lower()
 if method == " c":
     create_key()
 elif method == " e":
     
     plain_text = input("Message to Encrypt or Decrypt")
  
-    encKey = " " + input("Encryption Key")
+    encKey = input("Encryption Key")
     cipher_text = encrypt(plain_text, encKey)
     print(cipher_text)
 
