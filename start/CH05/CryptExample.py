@@ -17,14 +17,14 @@ def encrypt(plain_text, key):
 def decrpyt(cipher_text, key):
     cipher_text = cipher_text.encode()
     key = key.encode()
+
     plain_text = Fernet(key).decrypt(cipher_text)
     plain_text = plain_text.decode()
     return plain_text
-
-print("please enter c, d or e")
-method = input()
-
-
+encKey = ""
+print("What would you like to do")
+method = input("Create(c), Encrpyt(e) or Decrypt(d)")
+method = method[0].lower()
 if method == "c":
     create_key()
 elif method == "e":
