@@ -14,7 +14,7 @@ def encrypt(plain_text, key):
     cipher_text = cipher_text.decode()
     return cipher_text
 
-def decrpyt(cipher_text, key):
+def decrypt(cipher_text, key):
     cipher_text = cipher_text.encode()
     key = key.encode()
 
@@ -22,24 +22,20 @@ def decrpyt(cipher_text, key):
     plain_text = plain_text.decode()
     return plain_text
 encKey = ""
-print("What would you like to do")
+print("Encrpt, decrypt or create")
 method =  input("Create(c), Encrpyt(e) or Decrypt(d)")
 method = method[0].lower()
 if method == "c":
     create_key()
-elif method == "e":
-    
+elif method == "e":   
     plain_text = input("Message to Encrypt or Decrypt")
- 
     encKey = input("Encryption Key")
     cipher_text = encrypt(plain_text, encKey)
     print(cipher_text)
-
 elif method == "d":
-
     cipher_text = input("Message to Encrypt or Decrypt")
     encKey = input("Decrpytion Key")
-    plain_text = decrpyt(cipher_text, encKey)
+    plain_text = decrypt(cipher_text, encKey)
     print(plain_text)
 else:
     print("sorry, please enter c, d or r")
