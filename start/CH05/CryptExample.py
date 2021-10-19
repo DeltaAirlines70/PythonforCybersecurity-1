@@ -30,6 +30,7 @@ if method == "c":
 elif method == "e":
     
     plain_text = input("Message to Encrypt or Decrypt")
+
     encKey = input("Encryption Key")
     cipher_text = encrypt(plain_text, encKey)
     print(cipher_text)
