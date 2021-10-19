@@ -11,7 +11,7 @@ def encrypt(plain_text, key):
     plain_text = plain_text.encode()
     key = key.encode()
     cipher_text = Fernet(key).encrypt(plain_text)
-    cipher_text = cipher_text.deocde()
+    cipher_text = cipher_text.decode()
     return cipher_text
 
 def decrpyt(cipher_text, key):
@@ -23,11 +23,11 @@ def decrpyt(cipher_text, key):
     return plain_text
 encKey = ""
 print("What would you like to do")
-method =  " " + input("Create(c), Encrpyt(e) or Decrypt(d)")
+method =  input("Create(c), Encrpyt(e) or Decrypt(d)")
 method = method[0].lower()
-if method == " c":
+if method == "c":
     create_key()
-elif method == " e":
+elif method == "e":
     
     plain_text = input("Message to Encrypt or Decrypt")
  
@@ -35,7 +35,7 @@ elif method == " e":
     cipher_text = encrypt(plain_text, encKey)
     print(cipher_text)
 
-elif method == " d":
+elif method == "d":
 
     cipher_text = input("Message to Encrypt or Decrypt")
     encKey = input("Decrpytion Key")
