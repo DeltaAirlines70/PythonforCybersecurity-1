@@ -1,0 +1,10 @@
+from cryptography import Fernet
+
+def create_key():
+  def ecrypt(plain_text, key):
+  def decrypt(cipher_text, key):
+  encKey = ""
+method = input("Enter c for create, d for decrypt and e for encrypt")
+method = method[0].lower
+if method == "c":
+    create():
