@@ -5,9 +5,8 @@
 
 # NOTE: this example is limited to numbers. There are no letters or symbols in this example
 # Suggested to start by debugging to show how brute force walks through all available options 
-from _typeshed import IdentityFunction
+
 import crypt
-from typing import IO
 
 def test_password(hashed_password, algorithm_salt, plaintext_password):
     crypted_password = crypt.crypt(plaintext_password, algorithm_salt)
