@@ -3,7 +3,7 @@
 # By 
 # Asks for the message you want to encrypt or decrypt
 source_message = input("What is your message to encrypt/decrypt?")
-#source_message = source_message.lower()
+ 
 final_message = " "
 
 for letter in source_message:
