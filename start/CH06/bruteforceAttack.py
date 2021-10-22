@@ -19,6 +19,6 @@ algorithm_salt = "$6$G.DTW7g9s5U7KYf5$"
 
 for password in range(100000):
     result = test_password(hashed_password, algorithm_salt, str(password)
-    if result:
-        print("Match found: {0}".format(i))
-        break
+    if result
+       print("Match found: {0}".format(i))
+       break
