@@ -4,7 +4,7 @@
 # Asks for the message you want to encrypt or decrypt
 source_message = input("What is your message to encrypt/decrypt?")
 source_message = source_message.lower()
-final_message = " "
+final_message = ""
 
 for letter in source_message:
     # reads through the line and converts the letters into ascii_num
