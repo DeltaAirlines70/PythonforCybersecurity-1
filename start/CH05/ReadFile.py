@@ -5,5 +5,4 @@ ip_file = open(script_folder[0]+ "/testfile.txt", "r")
 ip_addresses = ip_file.read()
 print(ip_addresses)
 print(ip_file.read())
-
 ip_file.close()
